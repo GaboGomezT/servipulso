@@ -1,9 +1,9 @@
 {
-  "name": "landing-page-boilerplate",
+  "name": "servipulso",
   "version": "0.1.0",
   "author": {
-    "name": "Anthony Sistilli",
-    "url": "https://linktr.ee/anthonysistilli"
+    "name": "Gabriel Gómez Téllez",
+    "url": "https://gabrielgomez.dev"
   },
   "private": true,
   "scripts": {

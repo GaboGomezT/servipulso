@@ -1,92 +1,92 @@
 'use client'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
-import { usePathname } from 'next/navigation'
+// import { Button } from '@/components/ui/button'
+// import { usePathname } from 'next/navigation'
 import Typography from '@/components/ui/typography'
-import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerHeader,
-  DrawerTrigger
-} from '@/components/ui/drawer'
-import { MenuIcon, X } from 'lucide-react'
+// import {
+//   Drawer,
+//   DrawerClose,
+//   DrawerContent,
+//   DrawerHeader,
+//   DrawerTrigger
+// } from '@/components/ui/drawer'
+// import { MenuIcon, X } from 'lucide-react'
 
 interface SidebarProps
   extends React.HTMLAttributes<HTMLDivElement> {}
 
 export function Header({ className }: SidebarProps) {
-  const pathname = usePathname()
-  const items = [
-    {
-      href: 'https://map.sistilli.dev/public/coding/SaaS+Boilerplate',
-      title: 'Book a demo',
-      openInNewTab: true
-    }
-    // { href: '#pricing', title: 'Features' },
-    // {
-    //   href: 'mailto:myemail@.com',
-    //   title: 'Contact Us'
-    // }
-  ]
+  // const pathname = usePathname()
+  // const items = [
+  //   {
+  //     href: 'https://map.sistilli.dev/public/coding/SaaS+Boilerplate',
+  //     title: 'Book a demo',
+  //     openInNewTab: true
+  //   }
+  //   // { href: '#pricing', title: 'Features' },
+  //   // {
+  //   //   href: 'mailto:myemail@.com',
+  //   //   title: 'Contact Us'
+  //   // }
+  // ]
 
   const getLogo = () => (
     <Link href="/" className="pointer flex items-center">
-      <img src="/logo.svg" className="mr-3" />
+      <img src="/pulse-logo.svg" className="mr-3 h-8" />
       <Typography className="!text-white !text-base font-medium ">
-        Pandem
+        ServiPulso
       </Typography>
     </Link>
   )
 
-  const getAuthButtons = () => (
-    <div className="flex gap-3 items-center">
-      <Link
-        href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
-        target="_blank"
-      >
-        <Typography variant="p">Login</Typography>
-      </Link>
-      <Link
-        href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
-        target="_blank"
-      >
-        <Button size="tiny" color="ghost">
-          <Typography variant="p" className="text-black">
-            Sign Up
-          </Typography>
-        </Button>
-      </Link>
-    </div>
-  )
+  // const getAuthButtons = () => (
+  //   <div className="flex gap-3 items-center">
+  //     <Link
+  //       href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
+  //       target="_blank"
+  //     >
+  //       <Typography variant="p">Login</Typography>
+  //     </Link>
+  //     <Link
+  //       href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
+  //       target="_blank"
+  //     >
+  //       <Button size="tiny" color="ghost">
+  //         <Typography variant="p" className="text-black">
+  //           Sign Up
+  //         </Typography>
+  //       </Button>
+  //     </Link>
+  //   </div>
+  // )
 
-  const getHeaderItems = () => {
-    return (
-      <>
-        {items.map((item) => {
-          const selected =
-            pathname === item.href ||
-            pathname.includes(item.href)
-          return (
-            <Link
-              href={item.href}
-              className="pointer block w-fit"
-              target={item.openInNewTab ? '_blank' : ''}
-              key={item.title}
-            >
-              <Typography
-                variant="p"
-                className={cn(selected && 'text-primary')}
-              >
-                {item.title}
-              </Typography>
-            </Link>
-          )
-        })}
-      </>
-    )
-  }
+  // const getHeaderItems = () => {
+  //   return (
+  //     <>
+  //       {items.map((item) => {
+  //         const selected =
+  //           pathname === item.href ||
+  //           pathname.includes(item.href)
+  //         return (
+  //           <Link
+  //             href={item.href}
+  //             className="pointer block w-fit"
+  //             target={item.openInNewTab ? '_blank' : ''}
+  //             key={item.title}
+  //           >
+  //             <Typography
+  //               variant="p"
+  //               className={cn(selected && 'text-primary')}
+  //             >
+  //               {item.title}
+  //             </Typography>
+  //           </Link>
+  //         )
+  //       })}
+  //     </>
+  //   )
+  // }
 
   return (
     <div
@@ -104,12 +104,12 @@ export function Header({ className }: SidebarProps) {
           </div>
           <div className="hidden md:flex flex items-center w-full">
             <div className="flex items-center gap-x-8 flex-1">
-              {getHeaderItems()}
+              {/* {getHeaderItems()} */}
             </div>
-            {getAuthButtons()}
+            {/* {getAuthButtons()} */}
           </div>
           {/* Mobile */}
-          <div className="md:hidden flex gap-x-4 items-center">
+          {/* <div className="md:hidden flex gap-x-4 items-center">
             {getAuthButtons()}
             <Drawer direction="right">
               <DrawerTrigger asChild>
@@ -130,7 +130,7 @@ export function Header({ className }: SidebarProps) {
                 </div>
               </DrawerContent>
             </Drawer>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

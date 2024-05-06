@@ -8,7 +8,7 @@ import React from 'react'
 export const typographyVariants = cva('text-xl', {
   variants: {
     variant: {
-      h1: 'md:text-5xl scroll-m-20 text-3xl font-extrabold tracking-tight',
+      h1: 'md:text-5xl md:leading-relaxed scroll-m-20 text-3xl font-extrabold tracking-tight',
       h2: 'scroll-m-20 pb-2 md:text-3xl text-2xl font-semibold tracking-tight first:mt-0',
       h3: 'scroll-m-20 text-2xl font-semibold tracking-tight',
       h4: 'scroll-m-20 text-xl font-semibold tracking-tight',
@@ -32,7 +32,7 @@ export const typographyVariants = cva('text-xl', {
 
 export interface TypographyProps
   extends React.HTMLAttributes<HTMLHeadingElement>,
-    VariantProps<typeof typographyVariants> {}
+  VariantProps<typeof typographyVariants> { }
 
 const Typography = React.forwardRef<
   HTMLHeadingElement,
