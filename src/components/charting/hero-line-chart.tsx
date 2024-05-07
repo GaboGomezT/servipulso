@@ -28,7 +28,7 @@ const data: ChartData[] = [
 
 const AnimatedLineChart: React.FC = () => {
   return (
-    <div className="w-full h-80 bg-white p-4 shadow-xl rounded-lg">
+    <div className="w-full h-80 bg-white p-4 shadow-xl rounded-lg border-2 border-black">
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart
           data={data}

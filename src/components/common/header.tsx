@@ -33,8 +33,8 @@ export function Header({ className }: SidebarProps) {
 
   const getLogo = () => (
     <Link href="/" className="pointer flex items-center">
-      <img src="/pulse-logo.svg" className="mr-3 h-8" />
-      <Typography className="!text-white !text-base font-medium ">
+      <img src="/pulse-logo.svg" className="mr-3 h-10" />
+      <Typography className="!text-black !text-base font-medium ">
         ServiPulso
       </Typography>
     </Link>

@@ -29,7 +29,7 @@ export default function Home() {
         </Typography>
         <Typography className="max-w-2xl" variant="h5">
           Obtén retroalimentación directo de tus clientes
-          con encuestas rápidas y visualiza los resultados
+          con encuestas personalizables y visualiza los resultados
           en gráficas comprensibles para mejorar tu
           servicio.
         </Typography>
