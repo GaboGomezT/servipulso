@@ -12,8 +12,7 @@
     "start": "next start",
     "lint": "npm run next-lint && npm run format",
     "next-lint": "next lint --fix --quiet",
-    "format": "prettier --write --log-level error .",
-    "prepare": "husky"
+    "format": "prettier --write --log-level error ."
   },
   "dependencies": {
     "@headlessui/react": "^1.7.18",
@@ -67,7 +66,6 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "husky": "^9.0.10",
     "postcss": "^8",
     "prettier": "^3.2.5",
     "prettier-plugin-classnames": "^0.5.2",
