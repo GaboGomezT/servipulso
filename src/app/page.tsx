@@ -34,8 +34,7 @@ export default function Home() {
           tu servicio.
         </Typography>
         <Link
-          href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
-          target="_blank"
+          href="#waitlist"
         >
           <Button size="tiny" variant="ghost">
             Regístrate para un acceso anticipado

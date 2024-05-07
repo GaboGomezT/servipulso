@@ -13,7 +13,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="flex flex-col gap-6 items-center">
+    <div className="flex flex-col gap-6 items-center" id='waitlist'>
       {formSubmitted ? (
         <span className=' text-emerald-600 text-lg p-2 font-bold'>Por favor, revisa tu correo electrónico para confirmar tu registro. Si no ves nuestro mensaje, verifica en tu carpeta de spam.</span>
       ) : (
@@ -23,6 +23,7 @@ export default function ContactForm() {
             type="email"
             value={email}
             onChange={(e) => { setEmail(e.target.value); }}
+            placeholder="Tu correo electrónico"
             required
           />
           <Button type="submit" size="tiny" variant="ghost" className='text-lg'>
