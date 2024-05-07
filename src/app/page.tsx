@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button'
 import Typography from '@/components/ui/typography'
 import Image from 'next/image'
 import Feature from './feature'
-import { MessageCircleQuestion, BarChart3, Vote } from 'lucide-react'
+import { MessageCircleQuestion, BarChart3, Vote, FlaskConical, BrainCircuit, Rocket } from 'lucide-react'
 import Link from 'next/link'
 import AnimatedLineChart from '@/components/charting/hero-line-chart'
 
@@ -44,6 +44,29 @@ export default function Home() {
         <AnimatedLineChart />
       </div>
       <div className="flex flex-col md:pt-24 md:gap-36 gap-24 items-center">
+        {/* Benefits */}
+        <div className="flex flex-col gap-12 items-center">
+          <Typography className="max-w-2xl underline" variant="h2">
+            ¿Por qué deberías usarlo?
+          </Typography>
+          <div className="flex md:flex-row flex-col gap-12">
+            <Feature
+              icon={<Rocket size={24} />}
+              headline="Lo que no se mide, no se mejora"
+              description="Cuando obtienes retroalimentación directa de tus clientes, puedes identificar áreas de mejora y tomar decisiones informadas."
+            />
+            <Feature
+              icon={<BrainCircuit size={24} />}
+              headline="Encuentra tendencias y patrones"
+              description="Encuentra patrones que te dan una nueva perspectiva sobre tu servicio y toma decisiones basadas en datos."
+            />
+            <Feature
+              icon={<FlaskConical size={24} />}
+              headline="Mide la eficacia de tus experimentos"
+              description="¿Estás probando una nueva promoción o un cambio en tu servicio? Mide la eficacia de tus experimentos con datos reales."
+            />
+          </div>
+        </div>
         <div className="flex flex-col gap-12 items-center">
           <Typography className="max-w-2xl underline" variant="h2">
             ¿Cómo funciona?
