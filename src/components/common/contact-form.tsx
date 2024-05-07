@@ -1,7 +1,5 @@
 'use client';
 import { useState } from 'react';
-import Link from 'next/link'
-import Typography from '@/components/ui/typography'
 import { Button } from '@/components/ui/button'
 
 export default function ContactForm() {
@@ -24,7 +22,7 @@ export default function ContactForm() {
             className='rounded-md p-4 block my-2 text-lg w-full min-w-[400px]'
             type="email"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) => { setEmail(e.target.value); }}
             required
           />
           <Button type="submit" size="tiny" variant="ghost" className='text-lg'>
