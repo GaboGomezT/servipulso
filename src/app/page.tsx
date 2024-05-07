@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Feature from './feature'
 import { ArrowUpDown, Timer, Workflow } from 'lucide-react'
 import Link from 'next/link'
+import AnimatedLineChart from '@/components/charting/hero-line-chart'
 
 export default function Home() {
   return (
@@ -40,12 +41,7 @@ export default function Home() {
             Regístrate para un acceso anticipado
           </Button>
         </Link>
-        <Image
-          width={1024}
-          height={632}
-          alt="Pandem.dev hero image"
-          src="/hero1.png"
-        />
+        <AnimatedLineChart />
       </div>
       <div className="flex flex-col md:pt-24 md:gap-36 gap-24 items-center">
         <div className="flex flex-col gap-12 items-center">
