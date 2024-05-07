@@ -29,9 +29,9 @@ export default function Home() {
         </Typography>
         <Typography className="max-w-2xl" variant="h5">
           Obtén retroalimentación directo de tus clientes
-          con encuestas personalizables y visualiza los resultados
-          en gráficas comprensibles para mejorar tu
-          servicio.
+          con encuestas personalizables y visualiza los
+          resultados en gráficas comprensibles para mejorar
+          tu servicio.
         </Typography>
         <Link
           href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
