@@ -89,22 +89,6 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="flex flex-col gap-6 max-w-2xl items-center">
-          <Typography className="max-w-2xl" variant="h1">
-            Instant setup, no custom code
-          </Typography>
-          <Typography className="max-w-2xl" variant="p">
-            Quickly link new on-call tickets to similar past
-            incidents and their solutions. All directly in
-            Slack the moment an incident happens.
-          </Typography>
-          <Image
-            width={1024}
-            height={632}
-            alt="Pandem.dev hero image"
-            src="/hero1.png"
-          />
-        </div>
         <div className="flex flex-col gap-6 items-center">
           <Typography className="max-w-2xl" variant="h1">
             Get in touch
