@@ -4,6 +4,7 @@ import Link from 'next/link'
 // import { Button } from '@/components/ui/button'
 // import { usePathname } from 'next/navigation'
 import Typography from '@/components/ui/typography'
+import { Activity } from 'lucide-react'
 // import {
 //   Drawer,
 //   DrawerClose,
@@ -14,7 +15,7 @@ import Typography from '@/components/ui/typography'
 // import { MenuIcon, X } from 'lucide-react'
 
 interface SidebarProps
-  extends React.HTMLAttributes<HTMLDivElement> {}
+  extends React.HTMLAttributes<HTMLDivElement> { }
 
 export function Header({ className }: SidebarProps) {
   // const pathname = usePathname()
@@ -33,7 +34,9 @@ export function Header({ className }: SidebarProps) {
 
   const getLogo = () => (
     <Link href="/" className="pointer flex items-center">
-      <img src="/pulse-logo.svg" className="mr-3 h-10" />
+      <div className="py-2 px-2 rounded-md border max-w-fit bg-emerald-400 text-white self-center mx-4">
+        <Activity size={20} />
+      </div>
       <Typography className="!text-black !text-base font-medium ">
         ServiPulso
       </Typography>
@@ -102,12 +105,12 @@ export function Header({ className }: SidebarProps) {
           <div className="md:flex-0 min-w-fit flex-1">
             {getLogo()}
           </div>
-          <div className="hidden md:flex flex items-center w-full">
+          {/* <div className="hidden md:flex flex items-center w-full">
             <div className="flex items-center gap-x-8 flex-1">
-              {/* {getHeaderItems()} */}
+              {getHeaderItems()}
             </div>
-            {/* {getAuthButtons()} */}
-          </div>
+            {getAuthButtons()}
+          </div> */}
           {/* Mobile */}
           {/* <div className="md:hidden flex gap-x-4 items-center">
             {getAuthButtons()}
