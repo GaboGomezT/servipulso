@@ -12,20 +12,32 @@ export default function Home() {
         w-full items-center text-center gap-12"
     >
       <div className="flex flex-col gap-6 items-center">
-        <Typography className="max-w-2xl" variant="h1">
-          Information you need during on-call emergencies
+        <Typography
+          className="max-w-2xl leading-relaxed"
+          variant="h1"
+        >
+          Convierte cada{' '}
+          <span className="bg-emerald-400 px-2">
+            Opinión
+          </span>{' '}
+          en{' '}
+          <span className="bg-emerald-400 px-2">
+            Oportunidades
+          </span>{' '}
+          de Oro
         </Typography>
         <Typography className="max-w-2xl" variant="h5">
-          Quickly link new on-call tickets to similar past
-          incidents and their solutions. All directly in
-          Slack the moment an incident happens.
+          Obtén retroalimentación directo de tus clientes
+          con encuestas rápidas y visualiza los resultados
+          en gráficas comprensibles para mejorar tu
+          servicio.
         </Typography>
         <Link
           href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
           target="_blank"
         >
           <Button size="tiny" variant="ghost">
-            {`Get Started`}
+            Regístrate para un acceso anticipado
           </Button>
         </Link>
         <Image
