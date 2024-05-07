@@ -1,10 +1,10 @@
 import { Button } from '@/components/ui/button'
 import Typography from '@/components/ui/typography'
-import Image from 'next/image'
 import Feature from './feature'
 import { MessageCircleQuestion, BarChart3, Vote, FlaskConical, BrainCircuit, Rocket } from 'lucide-react'
 import Link from 'next/link'
 import AnimatedLineChart from '@/components/charting/hero-line-chart'
+import ContactForm from '@/components/common/contact-form'
 
 export default function Home() {
   return (
@@ -91,17 +91,9 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-6 items-center">
           <Typography className="max-w-2xl" variant="h1">
-            Get in touch
+            Entra a la lista de espera
           </Typography>
-          <div>Book a demo, or hop on a call</div>
-          <Link
-            href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
-            target="_blank"
-          >
-            <Button size="tiny" variant="ghost">
-              {`Book now`}
-            </Button>
-          </Link>
+          <ContactForm />
         </div>
       </div>
     </div>
