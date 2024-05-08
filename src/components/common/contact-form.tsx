@@ -17,7 +17,7 @@ export default function ContactForm() {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    (async () => {
+    void (async () => {
       // const recipients = [
       //   new Recipient(email)
       // ];
