@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 
-import 'dotenv/config';
-import { MailerSend, EmailParams, Sender, Recipient } from "mailersend";
+// import 'dotenv/config';
+// import { MailerSend, EmailParams, Sender, Recipient } from "mailersend";
 
-const mailerSend = new MailerSend({
-  apiKey: process.env.API_KEY || '',
-});
+// const mailerSend = new MailerSend({
+//   apiKey: process.env.API_KEY || '',
+// });
 
-const sentFrom = new Sender("gabriel@servipulso.com", "Gabriel Gómez");
+// const sentFrom = new Sender("gabriel@servipulso.com", "Gabriel Gómez");
 
 
 export default function ContactForm() {
@@ -17,18 +17,18 @@ export default function ContactForm() {
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const recipients = [
-      new Recipient(email)
-    ];
+    // const recipients = [
+    //   new Recipient(email)
+    // ];
 
-    const emailParams = new EmailParams()
-      .setFrom(sentFrom)
-      .setTo(recipients)
-      .setReplyTo(sentFrom)
-      .setSubject("Confirmación de lista de espera")
-      .setTemplateId('3z0vklo08y7l7qrx');
+    // const emailParams = new EmailParams()
+    //   .setFrom(sentFrom)
+    //   .setTo(recipients)
+    //   .setReplyTo(sentFrom)
+    //   .setSubject("Confirmación de lista de espera")
+    //   .setTemplateId('3z0vklo08y7l7qrx');
 
-    await mailerSend.email.send(emailParams);
+    // await mailerSend.email.send(emailParams);
     setFormSubmitted(true);
   };
 
