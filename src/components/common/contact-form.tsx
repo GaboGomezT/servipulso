@@ -15,20 +15,22 @@ export default function ContactForm() {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [email, setEmail] = useState('');
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    // const recipients = [
-    //   new Recipient(email)
-    // ];
+    (async () => {
+      // const recipients = [
+      //   new Recipient(email)
+      // ];
 
-    // const emailParams = new EmailParams()
-    //   .setFrom(sentFrom)
-    //   .setTo(recipients)
-    //   .setReplyTo(sentFrom)
-    //   .setSubject("Confirmación de lista de espera")
-    //   .setTemplateId('3z0vklo08y7l7qrx');
+      // const emailParams = new EmailParams()
+      //   .setFrom(sentFrom)
+      //   .setTo(recipients)
+      //   .setReplyTo(sentFrom)
+      //   .setSubject("Confirmación de lista de espera")
+      //   .setTemplateId('3z0vklo08y7l7qrx');
 
-    // await mailerSend.email.send(emailParams);
+      // await mailerSend.email.send(emailParams);
+    })();
     setFormSubmitted(true);
   };
 
