@@ -4,7 +4,7 @@ import './globals.css'
 import { ThemeProvider } from '@/providers/theme-provider'
 import { Header } from '@/components/common/header'
 import { Footer } from '@/components/common/footer'
-import { Analytics } from '@vercel/analytics/react'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -33,7 +33,6 @@ export default function RootLayout({
       suppressHydrationWarning
       className="antialiased"
     >
-      <Analytics />
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
@@ -54,6 +53,7 @@ export default function RootLayout({
           </main>
         </ThemeProvider>
       </body>
+      <Script src="https://scripts.simpleanalyticscdn.com/latest.js" />
     </html>
   )
 }
